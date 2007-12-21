@@ -15,6 +15,7 @@ Requires:       diffutils
 Requires:       git-core
 BuildArch:      noarch
 Epoch:		1
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Cogito is a version control system layered on top of the git tree history
