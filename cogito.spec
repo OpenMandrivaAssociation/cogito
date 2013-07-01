@@ -1,4 +1,4 @@
-Summary:	Cogito scm with git core
+Summary:	Scm with git core
 Name:		cogito
 Version:	0.18.2
 Release:	%mkrel 6
