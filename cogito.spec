@@ -1,7 +1,7 @@
 Summary:	Scm with git core
 Name:		cogito
 Version:	0.18.2
-Release:	%mkrel 6
+Release:	7
 Source0:	http://www.kernel.org/pub/software/scm/cogito/%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Development/Other
@@ -15,7 +15,6 @@ Requires:       diffutils
 Requires:       git-core
 BuildArch:      noarch
 Epoch:		1
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Cogito is a version control system layered on top of the git tree history
@@ -30,15 +29,12 @@ many other version control systems.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT/%{_bindir}
-make install DESTDIR=$RPM_BUILD_ROOT prefix=%{_prefix} libdir=%{_bindir}
+mkdir -p %{buildroot}/%{_bindir}
+make install DESTDIR=%{buildroot} prefix=%{_prefix} libdir=%{_bindir}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(-,root,root)
 %{_bindir}/cg*
 #%{_bindir}/commit-id
 #%{_bindir}/parent-id
