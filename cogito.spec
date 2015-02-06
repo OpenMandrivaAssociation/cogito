@@ -1,7 +1,7 @@
 Summary:	Scm with git core
 Name:		cogito
 Version:	0.18.2
-Release:	7
+Release:	8
 Source0:	http://www.kernel.org/pub/software/scm/cogito/%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Development/Other
