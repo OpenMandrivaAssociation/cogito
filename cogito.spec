@@ -5,7 +5,7 @@ Release:	8
 Source0:	http://www.kernel.org/pub/software/scm/cogito/%{name}-%{version}.tar.bz2
 License:	GPL
 Group:		Development/Other
-Url:		http://www.kernel.org/pub/software/scm/cogito/
+Url:		https://www.kernel.org/pub/software/scm/cogito/
 BuildRequires:	openssl-devel
 BuildRequires:  curl-devel
 BuildRequires:  zlib-devel
